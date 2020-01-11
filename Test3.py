@@ -5,8 +5,6 @@ class Node(object):
 
     # Get Ancestors Value
     def get_ancestors_value(self, value_list):
-        # print(self.value)
-        # print(value_list)
         value_list.add(self.value)
         if self.parent is not None:
             value_list.add(self.parent.value)
@@ -16,8 +14,6 @@ class Node(object):
 def lca(nodeA, nodeB):
     ancestorsA = nodeA.get_ancestors_value(set())
     ancestorsB = nodeB.get_ancestors_value(set())
-    # print(ancestorsA)
-    # print(ancestorsB)
 
     common_ancestors = ancestorsA.intersection(ancestorsB)
     
