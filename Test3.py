@@ -35,8 +35,8 @@ seven = Node(7, three)
 eight = Node(8, four)
 nine = Node(9, four)
 
-print(lca(nine, seven))
-print(lca(six, seven))
-print(lca(three, seven))
-print(lca(eight, nine))
-print(lca(nine, five))
+print(lca(nine, seven)) # 1
+print(lca(six, seven)) # 3
+print(lca(three, seven)) # 3
+print(lca(eight, nine)) # 4
+print(lca(nine, five)) # 2
